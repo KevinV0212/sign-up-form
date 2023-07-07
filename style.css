@@ -1,8 +1,8 @@
 :root{
+    --gold:#fdd79e;
     --light-gray:#dddddd;
-    --gray:#a8a8a8;
-    --light-pink:rgb(255, 197, 197);
-    --off-white:#eeeeee;
+    --gray:#838383;
+    --off-white:#f0f0f0;
 }
 *{
     margin: 0; padding: 0;
@@ -14,7 +14,7 @@ html{
 body{
     display:flex;
     flex-direction:row;
-    background-color:var(--light-gray);
+    background-color:var(--off-white);
     font-family: 'Questrial', sans-serif;
     font-weight:100;
 }
@@ -38,7 +38,7 @@ body{
     left:0;
     right:0;
 
-    color:var(--light-pink);
+    color:var(--gold);
 }
 .logo-text{
     top: 100px;
@@ -57,7 +57,7 @@ body{
 .logo-credit a:visited,
 .logo-credit a
 {
-    color:var(--light-pink);
+    color:var(--gold);
     font-weight:1000;
     text-decoration:none;
 }
@@ -102,7 +102,10 @@ body{
     width:100%;
     padding: 20px 40px;
     margin-bottom:40px;
-    background-color: var(--light-pink);
+
+    background-color: var(--gold);
+    box-shadow:0 2px 5px var(--gray);
+
 }
 form,
 input{
@@ -141,4 +144,16 @@ input[type='tel']{
 }
 .controls button{
     margin-bottom:20px;
+}
+
+form button{
+    padding:10px 40px;
+
+    text-align:center;
+    font-size:1em;
+    font-weight:800;
+
+    background-color:var(--gold);
+    border:2px solid var(--gray);
+    border-radius:10px;
 }
