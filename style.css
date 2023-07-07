@@ -1,0 +1,133 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing:border-box;
+}
+html{
+    font-size:16px;
+}
+body{
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(233, 233, 233);
+    font-family: 'Questrial', sans-serif;
+    font-weight:100;
+}
+
+.logo-wrapper{
+    position:relative;
+    max-width:50vw;
+}
+
+.logo-wrapper img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:cover;
+}
+
+.logo-text, .logo-credit{
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    left:0;
+    right:0;
+
+    color:white;
+}
+.logo-text{
+    top: 100px;
+
+    background: rgba(255,255,255,.1);
+    font-size: 3.5em;
+}
+.logo-credit{
+
+    font-size:1em;
+    bottom:30px;
+}
+
+.logo-credit a:hover,
+.logo-credit a:active,
+.logo-credit a:visited,
+.logo-credit a
+{
+    color:white;
+    font-weight:1000;
+    text-decoration:none;
+}
+
+.logo-credit a:active,
+.logo-credit a:hover{
+    filter:brightness(.7);
+    text-decoration:underline
+}
+.content{
+    flex:1 1 0;
+}
+
+.container{
+    height:100%;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.container .summary{
+    padding: 0 40px; 
+    margin-bottom:40px;
+
+    font-size:1.5em;
+}
+
+.summary .info{
+    margin-bottom:20px;
+}
+
+.form-wrapper{
+    width:100%;
+}
+.form-wrapper .form-header{
+    margin-bottom:10px;
+}
+
+.form-fields{
+    width:100%;
+    padding: 20px 40px;
+    margin-bottom:40px;
+    background-color:whitesmoke;
+}
+form,
+input{
+    width:100%;
+}
+
+.form-grid{
+    display:flex;
+    gap:40px;
+}
+.form-col{
+    flex: 1 1 0;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel']{
+
+}
+
+.controls{
+    padding: 0 40px;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.controls button{
+    margin-bottom:20px;
+}
