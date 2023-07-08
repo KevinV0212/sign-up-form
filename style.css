@@ -151,6 +151,7 @@ input[class='clicked']:invalid{
     border-color:red;
 }
 
+
 input[class='clicked']:invalid + span::after{
     display:block;
     margin-top:5px;
