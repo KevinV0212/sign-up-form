@@ -120,7 +120,7 @@ input{
     flex: 1 1 0;
     display:flex;
     flex-direction:column;
-    gap: 10px;
+    gap: 20px;
 }
 
 label{
