@@ -65,7 +65,7 @@ body{
 .logo-credit a:active,
 .logo-credit a:hover{
     filter:brightness(.7);
-    text-decoration:underline
+    text-decoration:underline;
 }
 .content{
     flex:1 1 0;
