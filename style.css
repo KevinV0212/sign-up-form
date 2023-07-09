@@ -155,7 +155,8 @@ input:placeholder-shown{
     border-radius:5px;
 }
 
-input[class='clicked']:invalid{
+input[class='clicked']:invalid,
+.invalid{
     border-color:var(--error-color);
 }
 
@@ -183,7 +184,7 @@ input[type='tel'][class='clicked']:invalid + span::after{
     content:'* Please enter valid phone number'
 }
 
-input[type='password'][class='clicked']:invalid + span::after{
+input[type='password'][class='clicked'][id='pass']:invalid + span::after{
     content:'* Please enter valid password'
 }
 

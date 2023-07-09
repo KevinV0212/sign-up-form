@@ -10,7 +10,7 @@ let passConfirm = document.querySelector('#pass-confirm');
 let passConfirmErr = document.querySelector('#pass-confirm + span');
 
 let passFields = [pass, passConfirm]
-passFields.forEach(field => field.addEventListener('keyup', () => {
+passFields.forEach(field => field.addEventListener('keyup', (e) => {
     const check = passwordsMatch();
     if (!check){
         passConfirmErr.textContent = '* Passwords do not match'
