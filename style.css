@@ -151,11 +151,14 @@ input[class='clicked']:invalid{
     border-color:red;
 }
 
+.input-wrapper span{
+    display:block;
+    height:.8em;
+}
 
 input[class='clicked']:invalid + span::after{
-    display:block;
     margin-top:5px;
-    font-size:.80em;
+    font-size:.8em;
     color:red;
 }
 
@@ -198,12 +201,14 @@ form button{
 
     background-color:var(--gold);
     border:none;
+    border-style:outset;
     border-radius:10px;
 }
 button:hover,
 button:active{
     filter:brightness(.8);
     cursor:pointer;
+    border-style:inset;
 }
 
 

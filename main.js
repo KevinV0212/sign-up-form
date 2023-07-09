@@ -7,3 +7,4 @@ inputs.forEach(input => input.addEventListener('focusout', e => {
 
 let pass = document.querySelector('#pass');
 let passConfirm = document.querySelector('#pass-confirm');
+passConfirm.addEventListener('keyUp', e => console.log(e.target.value));
